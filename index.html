@@ -64,7 +64,8 @@
     <section class="flex flex-col-reverse md:flex-row justify-between items-center w-11/12 mx-auto py-4gap-10">
         <div class="content flex-1 text-center md:text-left">
             <h1 class="text-4xl font-bold mb-5"><span class="text-sky-400">English</span> is Easy!!</h1>
-            <p class="font-bangla text-2xl">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে
+            <p class="font-bangla text-2xl">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার
+                দক্ষতা বাড়াতে
                 চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
             <div class="get-started-form flex flex-col space-y-3 mt-5">
                 <input class="input" type="text" name="name" id="" placeholder="Enter your name">
@@ -79,17 +80,30 @@
 
     <!-- Let's Learn Vocabularies section  -->
     <section class="my-5">
-        <h1 class="text-4xl font-bold text-center py-5 mb-5"><span class="text-sky-400">Let's </span>Learn Vocabularies</h1>
+        <h1 class="text-4xl font-bold text-center py-5 mb-5"><span class="text-sky-400">Let's </span>Learn Vocabularies
+        </h1>
 
         <div id="lavel-container" class="flex gap-5 flex-wrap justify-center">
 
         </div>
     </section>
 
+    <!-- search -->
+    <section class=" flex justify-center">
+        <div class="join">
+            <div>
+                <label class="input validator join-item">
+                    <input id="input-search" type="text" placeholder="Search Vocabulary Now" required />
+                </label>
+            </div>
+            <button id="btn-search" class="btn btn-primary join-item">Search</button>
+        </div>
+    </section>
+
     <!-- spinner -->
-     <section id="spinner" class="flex justify-center items-center hidden">
+    <section id="spinner" class="flex justify-center items-center hidden">
         <span class="loading loading-bars loading-xl"></span>
-     </section>
+    </section>
 
     <!-- word container  -->
     <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -100,26 +114,26 @@
     </section>
 
     <!-- Open the modal using ID.showModal() method -->
-<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-<dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <div id="details-container" class="space-y-5">
-        
-    </div>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container" class="space-y-5">
+
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
 
 
 
 
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
